@@ -1,0 +1,17 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <script>
+    // Path-preserving: /DenOpsFF/records/ -> /FantasyFootball/den-ops/records/
+    // 404.html catches every deep link, since Pages has no rewrite rules.
+    var rest = location.pathname.replace(/^\/DenOpsFF\/?/, "");
+    location.replace("/FantasyFootball/den-ops/" + rest + location.search + location.hash);
+  </script>
+  <meta http-equiv="refresh" content="1;url=/FantasyFootball/den-ops/">
+  </head>
+  <body>
+    <p>This league moved to <a href="/FantasyFootball/den-ops/">/FantasyFootball/den-ops/</a>.</p>
+  </body>
+  </html>
